@@ -1,0 +1,51 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Docs)", "..\Docs", "{B22C4BD1-C47B-B202-E725-63B9B0E66E4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Node)", "..\Docs\katicsd\Node", "{09541E2B-B21F-AF12-9EB4-47316E61AD6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(katicsd)", "..\Docs\katicsd", "{CCCB2642-8628-9AFB-1548-CEA6711E2407}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(node-addon-api)", "..\Docs\katicsd\Node\shm\node_modules\node-addon-api", "{76D26330-8CA7-0C76-5443-A3718456F13F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(node_modules)", "..\Docs\katicsd\Node\shm\node_modules", "{FC351E68-BFDB-3B36-4F8C-3A7EDA4DE75C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(shm)", "..\Docs\katicsd\Node\shm", "{0DC6843C-5FB6-E3B4-0E07-187D4691A32F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(src)", "..\Docs\katicsd\Node\shm\node_modules\node-addon-api\src", "{9DFA49DA-1E24-5496-DE99-AA73A33C3922}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nothing", "..\node_modules\node-addon-api\src\nothing.vcxproj", "{93166E92-EF04-C6CF-ABAE-B721F8FE1B41}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sharedmemory", "sharedmemory.vcxproj", "{BD750D9D-2B8B-C25F-E3DC-D15078D3A6FE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{93166E92-EF04-C6CF-ABAE-B721F8FE1B41} = {93166E92-EF04-C6CF-ABAE-B721F8FE1B41}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93166E92-EF04-C6CF-ABAE-B721F8FE1B41}.Debug|x64.ActiveCfg = Debug|x64
+		{93166E92-EF04-C6CF-ABAE-B721F8FE1B41}.Debug|x64.Build.0 = Debug|x64
+		{93166E92-EF04-C6CF-ABAE-B721F8FE1B41}.Release|x64.ActiveCfg = Release|x64
+		{93166E92-EF04-C6CF-ABAE-B721F8FE1B41}.Release|x64.Build.0 = Release|x64
+		{BD750D9D-2B8B-C25F-E3DC-D15078D3A6FE}.Debug|x64.ActiveCfg = Debug|x64
+		{BD750D9D-2B8B-C25F-E3DC-D15078D3A6FE}.Debug|x64.Build.0 = Debug|x64
+		{BD750D9D-2B8B-C25F-E3DC-D15078D3A6FE}.Release|x64.ActiveCfg = Release|x64
+		{BD750D9D-2B8B-C25F-E3DC-D15078D3A6FE}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CCCB2642-8628-9AFB-1548-CEA6711E2407} = {B22C4BD1-C47B-B202-E725-63B9B0E66E4D}
+		{0DC6843C-5FB6-E3B4-0E07-187D4691A32F} = {09541E2B-B21F-AF12-9EB4-47316E61AD6A}
+		{09541E2B-B21F-AF12-9EB4-47316E61AD6A} = {CCCB2642-8628-9AFB-1548-CEA6711E2407}
+		{9DFA49DA-1E24-5496-DE99-AA73A33C3922} = {76D26330-8CA7-0C76-5443-A3718456F13F}
+		{76D26330-8CA7-0C76-5443-A3718456F13F} = {FC351E68-BFDB-3B36-4F8C-3A7EDA4DE75C}
+		{FC351E68-BFDB-3B36-4F8C-3A7EDA4DE75C} = {0DC6843C-5FB6-E3B4-0E07-187D4691A32F}
+		{93166E92-EF04-C6CF-ABAE-B721F8FE1B41} = {9DFA49DA-1E24-5496-DE99-AA73A33C3922}
+	EndGlobalSection
+EndGlobal
