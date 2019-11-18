@@ -1,5 +1,5 @@
 {
-  "name": "sharedmemory",
+  "name": "windows-sharedmemory",
   "version": "1.0.0",
   "description": "Native access to Windows named shared memory.",
   "main": "sharedmemory.js",
