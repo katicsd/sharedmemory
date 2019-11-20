@@ -5,7 +5,7 @@ Native access to Windows named shared memory in NodeJS
 npm install -s windows-sharedmemory
 
 ## Usage
-```nodejs
+```js
 const SharedMemory=require('./SharedMemory.js');
 const NAME = "DATA";
 const SIZE = 1024;
